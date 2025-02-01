@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>GuesTheCity</title>
+</head>
+<body>
+  <h1 align="center">Guess the City</h1>
+  <h2 align="center" th:text="${wordToDisplay}"></h2>
+<hr/>
+  <div align="center">
+<form action="gameon" method="get">
+  <label>Guess Character Here</label>
+  <input type="text" name="guessChar">
+  <input type="submit" value="Try">
+</form>
+    <h2 align="center" th:text="${choice}"></h2>
+    <h2 align="right" th:text="${empty}"> </h2>
+    <h2 align="right" th:text="${attempt}"></h2>
+  </div>
+</body>
+</html>
